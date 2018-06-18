@@ -88,7 +88,7 @@ request.send(null);
 ```json
 [
   {
-    "domain_url": "ckq.io",
+    "domain_url": "my.domain",
     "fallback_url": "http://plyfe.com",
     "invalid_link_url": "http://plyfe.com"
   },
@@ -144,7 +144,7 @@ request.send(null);
 ```json
 [
   {
-    "domain_url": "ckq.io",
+    "domain_url": "my.domain",
     "fallback_url": "http://plyfe.com",
     "invalid_link_url": "http://plyfe.com"
   },
@@ -200,7 +200,7 @@ request.send(null);
 ```json
 [
   {
-    "domain_url": "ckq.io",
+    "domain_url": "my.domain",
     "fallback_url": "http://plyfe.com",
     "invalid_link_url": "http://plyfe.com"
   },
@@ -308,7 +308,7 @@ This endpoint deletes a domain.
 require 'net/http'
 require 'uri'
 
-uri = URI.parse('https://app.linksense.io/api/v1/domains/ckq.io/links')
+uri = URI.parse('https://app.linksense.io/api/v1/domains/my.domain/links')
 http = Net::HTTP.new(uri.host, uri.port)
 request = Net:HTTP::Get.new(uri.request_url)
 request.basic_auth("emailaddress@mydomain.com", "my_api_key")
@@ -317,7 +317,7 @@ response = http.request(request)
 
 ```shell
 curl --request GET \
-  --url "https://app.linksense.io/api/v1/domains/ckq.io/links"
+  --url "https://app.linksense.io/api/v1/domains/my.domain/links"
 	--header "Accept: application/json" \
 	--header "Content-Type: application/json" \
 	--header 'Authorization: emailaddress@mydomain.com:my_api_key'
@@ -325,7 +325,7 @@ curl --request GET \
 
 ```javascript
 var request = new XMLHttpRequest();
-request.open("GET", "https://app.linksense.io/api/v1/domains/ckq.io/links", false);
+request.open("GET", "https://app.linksense.io/api/v1/domains/my.domain/links", false);
 request.setRequestHeader("Authorization", "Basic " + btoa("emailaddress@mydomain.com:my_api_key"));
 request.send(null);
 ```
@@ -335,7 +335,7 @@ request.send(null);
 ```json
 [
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "3smrpq",
     "type": "simple",
     "type_name": "Simple Link",
@@ -350,7 +350,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "zkcxsf",
     "type": "simple",
     "type_name": "Simple Link",
@@ -365,13 +365,13 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "fr3n2y",
     "type": "simple",
     "type_name": "Simple Link",
     "name": null,
     "description": null,
-    "fallback_url": "sms:?&body=Hey%20Bestie!%20Happy%20National%20Best%20Friends%20Day.%20%0D%0AEnjoy%20a%20complimentary%20Infrared%20Wellness%20Pod%20session%20at%20Seattle%20Sun%20because%20you%20deserve%20it.%20Join%20the%20text%20club%20and%20get%20your%20FREE%20session.%20It's%20easy,%20just%20click%20here%20to%20join:%20ckq.io/rcjo3u%0D%0A%0D%0AJoin%20today%20and%20you'll%20have%20until%206/30%20to%20redeem%20your%20session.%0D%0A%0D%0ASeattlesuntan.com/locations",
+    "fallback_url": "sms:?&body=Hey%20Bestie!%20Happy%20National%20Best%20Friends%20Day.%20%0D%0AEnjoy%20a%20complimentary%20Infrared%20Wellness%20Pod%20session%20at%20Seattle%20Sun%20because%20you%20deserve%20it.%20Join%20the%20text%20club%20and%20get%20your%20FREE%20session.%20It's%20easy,%20just%20click%20here%20to%20join:%20my.domain/rcjo3u%0D%0A%0D%0AJoin%20today%20and%20you'll%20have%20until%206/30%20to%20redeem%20your%20session.%0D%0A%0D%0ASeattlesuntan.com/locations",
     "webhook_url": null,
     "clicks_all_time": 2089,
     "tags": [
@@ -380,13 +380,13 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "9iucbj",
     "type": "simple",
     "type_name": "Simple Link",
     "name": null,
     "description": null,
-    "fallback_url": "sms:?&body=I%20thought%20you%20might%20enjoy%20a%20little%20Rest%20and%20Relaxation%20on%20National%20Best%20Friends%20Day.%20%0D%0AEnjoy%20a%20complimentary%20Infrared%20Body%20Treatment%20at%20Desert%20Sun%20by%20joining%20the%20text%20club.%20Just%20click%20here%20to%20join%20and%20get%20your%20free%20session:%20ckq.io/6i8s88%0D%0AJoin%20the%20club%20today%20and%20you'll%20have%20until%206/30%20to%20redeem%20your%20treatment.%0D%0A%0D%0ADesertsuntanning.com/locations%0D%0A%0D%0A",
+    "fallback_url": "sms:?&body=I%20thought%20you%20might%20enjoy%20a%20little%20Rest%20and%20Relaxation%20on%20National%20Best%20Friends%20Day.%20%0D%0AEnjoy%20a%20complimentary%20Infrared%20Body%20Treatment%20at%20Desert%20Sun%20by%20joining%20the%20text%20club.%20Just%20click%20here%20to%20join%20and%20get%20your%20free%20session:%20my.domain/6i8s88%0D%0AJoin%20the%20club%20today%20and%20you'll%20have%20until%206/30%20to%20redeem%20your%20treatment.%0D%0A%0D%0ADesertsuntanning.com/locations%0D%0A%0D%0A",
     "webhook_url": null,
     "clicks_all_time": 2393,
     "tags": [
@@ -395,7 +395,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "rfwld1",
     "type": "simple",
     "type_name": "Simple Link",
@@ -410,7 +410,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "bjfibq",
     "type": "simple",
     "type_name": "Simple Link",
@@ -425,7 +425,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "foobar12",
     "type": "simple",
     "type_name": "Simple Link",
@@ -440,13 +440,13 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "va40cx",
     "type": "simple",
     "type_name": "Simple Link",
     "name": null,
     "description": null,
-    "fallback_url": "sms:?&body=It's%20National%20Best%20Friends%20Day,%20let's%20celebrate%20and%20%22SPA%22%20together.%20%0D%0A%0D%0AI%20joined%20the%20Seattle%20Sun%20Light%20Spa%20Text%20Club%20and%20got%20a%20free%20session%20in%20the%20relaxing%20Infrared%20Wellness%20Pod.%20Join%20the%20Text%20Club%20and%20you%20can%20get%20a%20free%20session%20too.%20Just%20click%20here%20to%20join:%20ckq.io/azjkvl%0D%0A%0D%0ALet%20me%20know%20when%20you%20get%20ur%20free%20session%20so%20we%20can%20schedule%20our%20spa%20service%20together.%0D%0A",
+    "fallback_url": "sms:?&body=It's%20National%20Best%20Friends%20Day,%20let's%20celebrate%20and%20%22SPA%22%20together.%20%0D%0A%0D%0AI%20joined%20the%20Seattle%20Sun%20Light%20Spa%20Text%20Club%20and%20got%20a%20free%20session%20in%20the%20relaxing%20Infrared%20Wellness%20Pod.%20Join%20the%20Text%20Club%20and%20you%20can%20get%20a%20free%20session%20too.%20Just%20click%20here%20to%20join:%20my.domain/azjkvl%0D%0A%0D%0ALet%20me%20know%20when%20you%20get%20ur%20free%20session%20so%20we%20can%20schedule%20our%20spa%20service%20together.%0D%0A",
     "webhook_url": null,
     "clicks_all_time": 19,
     "tags": [
@@ -455,7 +455,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "azjkvl",
     "type": "simple",
     "type_name": "Simple Link",
@@ -470,13 +470,13 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "6cbtd7",
     "type": "simple",
     "type_name": "Simple Link",
     "name": null,
     "description": null,
-    "fallback_url": "sms:?&body=I%20just%20entered%20to%20win%20$500!%20You%20should%20enter%20too!%0D%0A%0D%0AClick%20here%20to%20enter:%20ckq.io/ijvcjb",
+    "fallback_url": "sms:?&body=I%20just%20entered%20to%20win%20$500!%20You%20should%20enter%20too!%0D%0A%0D%0AClick%20here%20to%20enter:%20my.domain/ijvcjb",
     "webhook_url": null,
     "clicks_all_time": 0,
     "tags": [
@@ -485,7 +485,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "ijvcjb",
     "type": "simple",
     "type_name": "Simple Link",
@@ -500,13 +500,13 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "unrj7c",
     "type": "simple",
     "type_name": "Simple Link",
     "name": null,
     "description": null,
-    "fallback_url": "sms:?&body=It's%20National%20Best%20Friends%20Day.%20Time%20to%20celebrate!%0D%0AI%20just%20joined%20the%20Desert%20Sun%20Text%20Club%20and%20got%20a%20free%20Infrared%20Body%20Treatment.%20Join%20the%20text%20club%20and%20you%20can%20get%20your%20free%20session%20too.%20Just%20click%20here:%0D%0Ackq.io/6i8s88%0D%0A%0D%0ALet%20me%20know%20when%20you%20get%20your%20free%20session%20so%20we%20can%20schedule%20our%20spa%20service%20together.",
+    "fallback_url": "sms:?&body=It's%20National%20Best%20Friends%20Day.%20Time%20to%20celebrate!%0D%0AI%20just%20joined%20the%20Desert%20Sun%20Text%20Club%20and%20got%20a%20free%20Infrared%20Body%20Treatment.%20Join%20the%20text%20club%20and%20you%20can%20get%20your%20free%20session%20too.%20Just%20click%20here:%0D%0Amy.domain/6i8s88%0D%0A%0D%0ALet%20me%20know%20when%20you%20get%20your%20free%20session%20so%20we%20can%20schedule%20our%20spa%20service%20together.",
     "webhook_url": null,
     "clicks_all_time": 49,
     "tags": [
@@ -515,7 +515,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "6i8s88",
     "type": "simple",
     "type_name": "Simple Link",
@@ -530,13 +530,13 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "ydtxtf",
     "type": "simple",
     "type_name": "Simple Link",
     "name": null,
     "description": null,
-    "fallback_url": "sms:?&body=It's%20National%20Best%20Friends%20Day,%20let's%20celebrate%20and%20%22SPA%22%20together.%20%0D%0A%0D%0AI%20joined%20the%20Seattle%20Sun%20Tan%20Text%20Club%20and%20got%20a%20free%20session%20in%20the%20relaxing%20Infrared%20Wellness%20Pod.%20Join%20the%20Text%20Club%20and%20you%20can%20get%20a%20free%20session%20too.%20Just%20click%20here%20to%20join.%20ckq.io/rcjo3u%0D%0A%0D%0ALet%20me%20know%20when%20you%20get%20ur%20free%20session%20so%20we%20can%20schedule%20our%20spa%20service%20together.%0D%0A",
+    "fallback_url": "sms:?&body=It's%20National%20Best%20Friends%20Day,%20let's%20celebrate%20and%20%22SPA%22%20together.%20%0D%0A%0D%0AI%20joined%20the%20Seattle%20Sun%20Tan%20Text%20Club%20and%20got%20a%20free%20session%20in%20the%20relaxing%20Infrared%20Wellness%20Pod.%20Join%20the%20Text%20Club%20and%20you%20can%20get%20a%20free%20session%20too.%20Just%20click%20here%20to%20join.%20my.domain/rcjo3u%0D%0A%0D%0ALet%20me%20know%20when%20you%20get%20ur%20free%20session%20so%20we%20can%20schedule%20our%20spa%20service%20together.%0D%0A",
     "webhook_url": null,
     "clicks_all_time": 23,
     "tags": [
@@ -545,7 +545,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "v8u0jl",
     "type": "simple",
     "type_name": "Simple Link",
@@ -560,13 +560,13 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "rcjo3u",
     "type": "simple",
     "type_name": "Simple Link",
     "name": null,
     "description": null,
-    "fallback_url": "sms:20800?&body=Friends2Join",
+    "fallback_url": "sms:99999?&body=Friends2Join",
     "webhook_url": null,
     "clicks_all_time": 155,
     "tags": [
@@ -575,7 +575,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "zobwvy",
     "type": "simple",
     "type_name": "Simple Link",
@@ -591,13 +591,13 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "olfttc",
     "type": "simple",
     "type_name": "Simple Link",
     "name": null,
     "description": null,
-    "fallback_url": "http://www.tatango.com/login",
+    "fallback_url": "http://www.mycompany.com/login",
     "webhook_url": "http://127.0.0.1:3008/update_link_click",
     "clicks_all_time": 0,
     "tags": [
@@ -607,7 +607,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "y0aqp4",
     "type": "simple",
     "type_name": "Simple Link",
@@ -623,7 +623,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "iw2ynd",
     "type": "simple",
     "type_name": "Simple Link",
@@ -639,7 +639,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "1rvveh",
     "type": "simple",
     "type_name": "Simple Link",
@@ -655,7 +655,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "efvwgf",
     "type": "simple",
     "type_name": "Simple Link",
@@ -671,7 +671,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "6xoa8g",
     "type": "simple",
     "type_name": "Simple Link",
@@ -687,7 +687,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "gebhim",
     "type": "simple",
     "type_name": "Simple Link",
@@ -703,7 +703,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "flh2uk",
     "type": "simple",
     "type_name": "Simple Link",
@@ -725,7 +725,7 @@ This endpoint returns a list of links for a domain.
 
 ### HTTP Request
 
-`GET https://app.linksense.io/api/v1/domains/ckq.io/links`
+`GET https://app.linksense.io/api/v1/domains/my.domain/links`
 
 ## Get a single link
 
@@ -733,7 +733,7 @@ This endpoint returns a list of links for a domain.
 require 'net/http'
 require 'uri'
 
-uri = URI.parse('https://app.linksense.io/api/v1/domains/ckq.io/links/ijvcjb')
+uri = URI.parse('https://app.linksense.io/api/v1/domains/my.domain/links/ijvcjb')
 http = Net::HTTP.new(uri.host, uri.port)
 request = Net:HTTP::Get.new(uri.request_url)
 request.basic_auth("emailaddress@mydomain.com", "my_api_key")
@@ -742,7 +742,7 @@ response = http.request(request)
 
 ```shell
 curl --request GET \
-  --url "https://app.linksense.io/api/v1/domains/ckq.io/links/ijvcjb"
+  --url "https://app.linksense.io/api/v1/domains/my.domain/links/ijvcjb"
 	--header "Accept: application/json" \
 	--header "Content-Type: application/json" \
 	--header 'Authorization: emailaddress@mydomain.com:my_api_key'
@@ -750,7 +750,7 @@ curl --request GET \
 
 ```javascript
 var request = new XMLHttpRequest();
-request.open("GET", "https://app.linksense.io/api/v1/domains/ckq.io/links/ijvcjb", false);
+request.open("GET", "https://app.linksense.io/api/v1/domains/my.domain/links/ijvcjb", false);
 request.setRequestHeader("Authorization", "Basic " + btoa("emailaddress@mydomain.com:my_api_key"));
 request.send(null);
 ```
@@ -759,7 +759,7 @@ request.send(null);
 
 ```json
 {
-  "domain_name": "ckq.io",
+  "domain_name": "my.domain",
   "slug": "ijvcjb",
   "type": "simple",
   "type_name": "Simple Link",
@@ -779,7 +779,7 @@ This endpoint returns a single link.
 
 ### HTTP Request
 
-`GET https://app.linksense.io/api/v1/domains/ckq.io/links/ijvcjb`
+`GET https://app.linksense.io/api/v1/domains/my.domain/links/ijvcjb`
 
 ## Update a link
 
@@ -787,22 +787,22 @@ This endpoint returns a single link.
 require 'net/http'
 require 'uri'
 
-uri = URI.parse('https://app.linksense.io/api/v1/domains/ckq.io/links/ijvcjb')
+uri = URI.parse('https://app.linksense.io/api/v1/domains/my.domain/links/ijvcjb')
 http = Net::HTTP.new(uri.host, uri.port)
 request = Net:HTTP::Put.new(uri.request_url)
 request.basic_auth("emailaddress@mydomain.com", "my_api_key")
-request.body({"domain_name": "ckq.io","slug": "ijvcjb","description": "Test","fallback_url": "sms:47400?&body=Money","clicks_all_time": 1,"tags": ["881816"],"rules": []});
+request.body({"domain_name": "my.domain","slug": "ijvcjb","description": "Test","fallback_url": "sms:47400?&body=Money","clicks_all_time": 1,"tags": ["881816"],"rules": []});
 response = http.request(request)
 ```
 
 ```shell
 curl --request PUT \
-  --url "https://app.linksense.io/api/v1/domains/ckq.io/links/ijvcjb"
+  --url "https://app.linksense.io/api/v1/domains/my.domain/links/ijvcjb"
 	--header "Accept: application/json" \
 	--header "Content-Type: application/json" \
 	--header 'Authorization: emailaddress@mydomain.com:my_api_key'
 	--data '{
-      "domain_name": "ckq.io",
+      "domain_name": "my.domain",
       "slug": "ijvcjb",
       "description": "Test",
       "fallback_url": "sms:47400?&body=Money",
@@ -816,9 +816,9 @@ curl --request PUT \
 
 ```javascript
 var request = new XMLHttpRequest();
-request.open("PUT", "https://app.linksense.io/api/v1/domains/ckq.io/links/ijvcjb", false);
+request.open("PUT", "https://app.linksense.io/api/v1/domains/my.domain/links/ijvcjb", false);
 request.setRequestHeader("Authorization", "Basic " + btoa("emailaddress@mydomain.com:my_api_key"));
-var data = JSON.stringify({"domain_name": "ckq.io","slug": "ijvcjb","description": "Test","fallback_url": "sms:47400?&body=Money","clicks_all_time": 1,"tags": ["881816"],"rules": []});
+var data = JSON.stringify({"domain_name": "my.domain","slug": "ijvcjb","description": "Test","fallback_url": "sms:47400?&body=Money","clicks_all_time": 1,"tags": ["881816"],"rules": []});
 request.send(null);
 ```
 
@@ -826,7 +826,7 @@ request.send(null);
 
 ```json
 {
-  "domain_name": "ckq.io",
+  "domain_name": "my.domain",
   "slug": "ijvcjb",
   "type": "simple",
   "type_name": "Simple Link",
@@ -846,7 +846,7 @@ This endpoint updates a link.
 
 ### HTTP Request
 
-`PUT https://app.linksense.io/api/v1/domains/ckq.io/links/ijvcjb`
+`PUT https://app.linksense.io/api/v1/domains/my.domain/links/ijvcjb`
 
 ## Fetch Link Status
 
@@ -858,7 +858,7 @@ uri = URI.parse('https://app.linksense.io/api/v1/stats')
 http = Net::HTTP.new(uri.host, uri.port)
 request = Net:HTTP::POST.new(uri.request_url)
 request.basic_auth("emailaddress@mydomain.com", "my_api_key")
-request.body({"links": ["ckq.io/va40cx"]});
+request.body({"links": ["my.domain/va40cx"]});
 response = http.request(request)
 ```
 
@@ -870,7 +870,7 @@ curl --request POST \
 	--header 'Authorization: emailaddress@mydomain.com:my_api_key'
 	--data '{
   	"links": [
-  		"ckq.io/va40cx"
+  		"my.domain/va40cx"
   	]
   }'
 ```
@@ -879,7 +879,7 @@ curl --request POST \
 var request = new XMLHttpRequest();
 request.open("POST", "https://app.linksense.io/api/v1/stats", false);
 request.setRequestHeader("Authorization", "Basic " + btoa("emailaddress@mydomain.com:my_api_key"));
-var data = JSON.stringify({"links": ["ckq.io/va40cx"]});
+var data = JSON.stringify({"links": ["my.domain/va40cx"]});
 request.send(null);
 ```
 
@@ -888,7 +888,7 @@ request.send(null);
 ```json
 [
   {
-    "domain": "ckq.io",
+    "domain": "my.domain",
     "slug": "va40cx",
     "clicks_all_time": 19,
     "clicks_today": 0,
@@ -947,7 +947,7 @@ uri = URI.parse('https://app.linksense.io/api/v1/links')
 http = Net::HTTP.new(uri.host, uri.port)
 request = Net:HTTP::POST.new(uri.request_url)
 request.basic_auth("emailaddress@mydomain.com", "my_api_key")
-request.body({"domain_name": "ckq.io","slug": "foobar12","description": null,"name": "Test Link","fallback_url": "http://www.google.com","webhook_url": "http://www.google.com/webhook","tags": "myawesometag","rules": []});
+request.body({"domain_name": "my.domain","slug": "foobar12","description": null,"name": "Test Link","fallback_url": "http://www.google.com","webhook_url": "http://www.google.com/webhook","tags": "myawesometag","rules": []});
 response = http.request(request)
 ```
 
@@ -958,7 +958,7 @@ curl --request POST \
 	--header "Content-Type: application/json" \
 	--header 'Authorization: emailaddress@mydomain.com:my_api_key'
 	--data '{
-      "domain_name": "ckq.io",
+      "domain_name": "my.domain",
       "slug": "foobar12",
       "description": null,
       "name": "Test Link",
@@ -973,7 +973,7 @@ curl --request POST \
 var request = new XMLHttpRequest();
 request.open("POST", "https://app.linksense.io/api/v1/links", false);
 request.setRequestHeader("Authorization", "Basic " + btoa("emailaddress@mydomain.com:my_api_key"));
-var data = JSON.stringify({"domain_name": "ckq.io","slug": "foobar12","description": null,"name": "Test Link","fallback_url": "http://www.google.com","webhook_url": "http://www.google.com/webhook","tags": "myawesometag","rules": []});
+var data = JSON.stringify({"domain_name": "my.domain","slug": "foobar12","description": null,"name": "Test Link","fallback_url": "http://www.google.com","webhook_url": "http://www.google.com/webhook","tags": "myawesometag","rules": []});
 request.send(null);
 ```
 
@@ -982,7 +982,7 @@ request.send(null);
 ```json
 [
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "foobar13",
     "type": "simple",
     "type_name": "Simple Link",
@@ -1015,7 +1015,7 @@ uri = URI.parse('https://app.linksense.io/api/v1/links/multi')
 http = Net::HTTP.new(uri.host, uri.port)
 request = Net:HTTP::POST.new(uri.request_url)
 request.basic_auth("emailaddress@mydomain.com", "my_api_key")
-request.body({"domain_name": "ckq.io","count": 2,"description": null,"name": "Test Link","fallback_url": "http://www.google.com","webhook_url": "http://www.google.com/webhook","tags": "myawesometag","rules": []});
+request.body({"domain_name": "my.domain","count": 2,"description": null,"name": "Test Link","fallback_url": "http://www.google.com","webhook_url": "http://www.google.com/webhook","tags": "myawesometag","rules": []});
 response = http.request(request)
 ```
 
@@ -1026,7 +1026,7 @@ curl --request POST \
 	--header "Content-Type: application/json" \
 	--header 'Authorization: emailaddress@mydomain.com:my_api_key'
 	--data '{
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "count": 2,
       "description": null,
       "name": "Test Link",
@@ -1041,7 +1041,7 @@ curl --request POST \
 var request = new XMLHttpRequest();
 request.open("POST", "https://app.linksense.io/api/v1/links/multi", false);
 request.setRequestHeader("Authorization", "Basic " + btoa("emailaddress@mydomain.com:my_api_key"));
-var data = JSON.stringify({"domain_name": "ckq.io","count": 2,"description": null,"name": "Test Link","fallback_url": "http://www.google.com","webhook_url": "http://www.google.com/webhook","tags": "myawesometag","rules": []});
+var data = JSON.stringify({"domain_name": "my.domain","count": 2,"description": null,"name": "Test Link","fallback_url": "http://www.google.com","webhook_url": "http://www.google.com/webhook","tags": "myawesometag","rules": []});
 request.send(null);
 ```
 
@@ -1050,7 +1050,7 @@ request.send(null);
 ```json
 [
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "qddpyk",
     "type": "simple",
     "type_name": "Simple Link",
@@ -1065,7 +1065,7 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "ctz3sy",
     "type": "simple",
     "type_name": "Simple Link",
@@ -1094,7 +1094,7 @@ This endpoint creates multiple links.
 require 'net/http'
 require 'uri'
 
-uri = URI.parse('https://app.linksense.io/api/v1/domains/ckq.io/links/foobar13')
+uri = URI.parse('https://app.linksense.io/api/v1/domains/my.domain/links/foobar13')
 http = Net::HTTP.new(uri.host, uri.port)
 request = Net:HTTP::DELETE.new(uri.request_url)
 request.basic_auth("emailaddress@mydomain.com", "my_api_key")
@@ -1103,7 +1103,7 @@ response = http.request(request)
 
 ```shell
 curl --request DELETE \
-  --url "https://app.linksense.io/api/v1/domains/ckq.io/links/foobar13"
+  --url "https://app.linksense.io/api/v1/domains/my.domain/links/foobar13"
 	--header "Accept: application/json" \
 	--header "Content-Type: application/json" \
 	--header 'Authorization: emailaddress@mydomain.com:my_api_key'
@@ -1111,7 +1111,7 @@ curl --request DELETE \
 
 ```javascript
 var request = new XMLHttpRequest();
-request.open("DELETE", "https://app.linksense.io/api/v1/domains/ckq.io/links/foobar13", false);
+request.open("DELETE", "https://app.linksense.io/api/v1/domains/my.domain/links/foobar13", false);
 request.setRequestHeader("Authorization", "Basic " + btoa("emailaddress@mydomain.com:my_api_key"));
 request.send(null);
 ```
@@ -1126,7 +1126,7 @@ This endpoint deletes a link.
 
 ### HTTP Request
 
-`PUT https://app.linksense.io/api/v1/domains/ckq.io/links/foobar13`
+`PUT https://app.linksense.io/api/v1/domains/my.domain/links/foobar13`
 
 # Tags
 
@@ -1323,7 +1323,7 @@ request.send(null);
 ```json
 [
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "ijvcjb",
     "type": "simple",
     "type_name": "Simple Link",
@@ -1338,13 +1338,13 @@ request.send(null);
     "rules": []
   },
   {
-    "domain_name": "ckq.io",
+    "domain_name": "my.domain",
     "slug": "6cbtd7",
     "type": "simple",
     "type_name": "Simple Link",
     "name": null,
     "description": null,
-    "fallback_url": "sms:?&body=I%20just%20entered%20to%20win%20$500!%20You%20should%20enter%20too!%0D%0A%0D%0AClick%20here%20to%20enter:%20ckq.io/ijvcjb",
+    "fallback_url": "sms:?&body=I%20just%20entered%20to%20win%20$500!%20You%20should%20enter%20too!%0D%0A%0D%0AClick%20here%20to%20enter:%20my.domain/ijvcjb",
     "webhook_url": null,
     "clicks_all_time": 0,
     "tags": [

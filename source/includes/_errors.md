@@ -1,6 +1,6 @@
 # Errors
 
-The tatango API uses the following error codes:
+The LinkSense API uses the following error codes:
 
 
 Error Code | Meaning
