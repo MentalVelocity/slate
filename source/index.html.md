@@ -20,7 +20,7 @@ You can view code examples in the dark area to the right, and you can switch the
 
 # Authentication
 
-Need authentication information.
+LinkSense authenticates API requests by validating an API key that must be passed with each API call.  We use the built-in HTTP basic authentication scheme supported by most HTTP libraries.  Use your login email as the username and the API key as the password.
 
 > To authorize, use this code:
 
@@ -48,8 +48,6 @@ request.send(null);
 ```
 
 > Make sure to replace `my_api_key` with your API key, which can be obtained by logging into <a href="https://app.linksense.io/" target="_blank">https://app.linksense.io</a>.
-
-LinkSense authenticates API requests by validating an API key that must be passed with each API call.  We use the built-in HTTP basic authentication scheme supported by most HTTP libraries.  Use your login email as the username and the API key as the password.
 
 
 
