@@ -302,7 +302,7 @@
 
 <p>You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 <h1 id='authentication'>Authentication</h1>
-<p>Need authentication information.</p>
+<p>LinkSense authenticates API requests by validating an API key that must be passed with each API call.  We use the built-in HTTP basic authentication scheme supported by most HTTP libraries.  Use your login email as the username and the API key as the password.</p>
 
 <blockquote>
 <p>To authorize, use this code:</p>
@@ -325,8 +325,6 @@ curl -u emailaddress@mydomain.com:my_api_key https://app.linksense.io/api/v1/exa
 <blockquote>
 <p>Make sure to replace <code>my_api_key</code> with your API key, which can be obtained by logging into <a href="https://app.linksense.io/" target="_blank">https://app.linksense.io</a>.</p>
 </blockquote>
-
-<p>LinkSense authenticates API requests by validating an API key that must be passed with each API call.  We use the built-in HTTP basic authentication scheme supported by most HTTP libraries.  Use your login email as the username and the API key as the password.</p>
 <h1 id='domains'>Domains</h1><h2 id='list-domains'>List Domains</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'net/http'</span>
 <span class="nb">require</span> <span class="s1">'uri'</span>
 
